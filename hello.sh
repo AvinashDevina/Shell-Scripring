@@ -1,3 +1,3 @@
-SDFGSFDGSAF
-d.fsmasv /dev/sfdvsdf
-s,dfbgdfs
+#!/bin/bash
+
+echo -e "Hello World/nWelcome"
