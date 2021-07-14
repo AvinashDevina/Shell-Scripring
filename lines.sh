@@ -37,7 +37,7 @@ tput sgr0
 
 
 echo -e "\033[1m bold"
-     echo -e "\x1b[30m black"
+     echo -e "\x1b[30;1m black"
      echo -e "\x1b[31m red"
      echo -e "\x1b[32m green"
      echo -e "\x1b[33m yellow"
