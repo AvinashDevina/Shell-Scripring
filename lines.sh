@@ -38,7 +38,7 @@ tput sgr0
 
 echo -e "\e[36;1m bold"
      echo -e "\e[30;1m black"
-     echo -e "\e[31m red"
+     echo -e "red"
      echo -e "\e[32m green"
      echo -e "\e[33m yellow"
      echo -e "\e[34m blue"
