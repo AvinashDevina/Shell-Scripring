@@ -36,7 +36,7 @@ echo -e "This text is ${RED}red${NONE} and ${GREEN}green${NONE} and ${BOLD}bold$
 tput sgr0
 
 
-echo -e "\033[36;1m bold"
+echo -e "\e[36;1m bold"
      echo -e "\033[30;1m black"
      echo -e "\x1b[31m red"
      echo -e "\x1b[32m green"
