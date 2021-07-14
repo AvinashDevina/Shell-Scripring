@@ -1,2 +1,0 @@
-#!/bin/bash
-# help --ls
