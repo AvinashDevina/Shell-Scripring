@@ -34,3 +34,14 @@ UNDERLINE='\033[4m'
 echo -e "This text is ${RED}red${NONE} and ${GREEN}green${NONE} and ${BOLD}bold${NONE} and ${UNDERLINE}underlined${NONE}."
 
 tput sgr0
+
+
+echo -e "\x1b[1m bold"
+     echo -e "\x1b[30m black"
+     echo -e "\x1b[31m red"
+     echo -e "\x1b[32m green"
+     echo -e "\x1b[33m yellow"
+     echo -e "\x1b[34m blue"
+     echo -e "\x1b[35m mag"
+     echo -e "\x1b[36m cyan"
+     echo -e "\x1b[37m white"
