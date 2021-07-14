@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "hello/nWorld"
+echo "hello /nWorld"
