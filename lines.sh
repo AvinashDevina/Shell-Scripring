@@ -8,5 +8,5 @@ echo -e "\e[35mAVINASH\e[0m"
 echo -e '\033[1;31mHello\e[0m'
 
 echo AVINASH
-echo -e "\033[1;31mAVINASH"
-echo -e "\033[0;31mAVINASH"
+echo -e "\033[1;31mAVINASH\e[0m"
+echo -e "\033[0;mAVINASH"
