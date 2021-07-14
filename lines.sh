@@ -14,5 +14,5 @@ echo -e "\033[0;37mAVINASH"
 
 
 
-echo -e "\n\n\t\033[1;32mAmma\e[0m \n\n\t\033[1;34mnanna\e[0m"
+echo -e "\n\n\t\033[1;1;32mAmma\e[0m \n\n\t\033[1;34mnanna\e[0m"
 echo -e "\n\n\t\033[0;32mAmma\e[0m \n\n\t\033[0;34mnanna\e[0m"
