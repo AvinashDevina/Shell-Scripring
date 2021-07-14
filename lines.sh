@@ -10,3 +10,8 @@ echo -e '\033[1;31mHello\e[0m'
 echo AVINASH
 echo -e "\033[1;31mAVINASH\e[0m"
 echo -e "\033[0;37mAVINASH"
+
+
+
+
+echo -e "\n\n\t\033[1;32mAmma\e[0m \n\n\t\033[1;34mnanna\e[0m"
