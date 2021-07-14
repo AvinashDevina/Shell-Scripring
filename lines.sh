@@ -10,3 +10,5 @@ echo -e '\031[1;mYOUR_STRING\031[0m'
 
 echo -e '\033[1;31mHello'
 
+echo AVINASH
+echo -e "\033[1;mAVINASH"
