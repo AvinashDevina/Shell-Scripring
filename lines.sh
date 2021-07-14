@@ -8,3 +8,5 @@ echo -e "\e[35mAVINASH\e[0m"
 
 echo -e '\031[1;mYOUR_STRING\031[0m'
 
+echo -r '\033[1;31mHello'
+
