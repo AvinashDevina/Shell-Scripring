@@ -45,3 +45,7 @@ echo -e "\e[36;1m bold"
      echo -e "\e[35m mag"
      echo -e "\e[36m cyan"
      echo -e "\e[37m white"
+
+
+
+echo
