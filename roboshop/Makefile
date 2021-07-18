@@ -1,5 +1,5 @@
 frontend:
-	@echo Creating Frontend
+	@echo -e \e[31mCreating Frontend\e[0m
 	@bash frontend.sh
 ##
 catalouge:
