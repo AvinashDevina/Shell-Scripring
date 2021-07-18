@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo \t"Installing Nginx"
+echo "\tmInstalling Nginx"
 yum install nginx -y &>> ~/logs/frontend.log
 echo "Installation is Successfull"
 
