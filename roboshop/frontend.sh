@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\t[32mInstalling Nginx"
+echo -e "\t]32mInstalling Nginx\]0m"
 #yum install nginx -y &>> ~/logs/frontend.log
 #echo "Installation is Successfull"
 
