@@ -6,10 +6,10 @@ yum install nginx -y &>> $LOG
 #echo "Installation is Successful"
 
 #echo "Starting Nginx"
-#systemctl start nginx
+#systemctl start nginx &>> $LOG
 #echo "Nginx is Started"
 
 #echo "Enabling Nginx Auto Start after Reboot"
-#systemctl enable nginx
+#systemctl enable nginx &>> $LOG
 #echo "Done Enabling Nginx"
 
