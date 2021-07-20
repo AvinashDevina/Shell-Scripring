@@ -1,7 +1,8 @@
 #!/bin/bash
 
+LOG=/tmp/roboshoplogs/frontend.log
 echo -e "Step1 : \e[32mInstalling Nginx\e[0m"
-#yum install nginx -y &>> ~/logs/frontend.log
+yum install nginx -y &>> $LOG
 #echo "Installation is Successful"
 
 #echo "Starting Nginx"
