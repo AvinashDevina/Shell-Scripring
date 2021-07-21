@@ -18,7 +18,7 @@ unzip /tmp/frontend.zip &>>$LOG && mv frontend-main/* . &>>$LOG && mv static/* .
 STATUS_CHECK $?
 
 echo -n -e "\t\e[32m4. Cleaning useless Directories\e[0m.... \t\t"
-cd /usr/share/nginx/html && rm -rf frontend-master static &>>$LOG
+cd /usr/share/nginx/html && rm -rf frontend-main static &>>$LOG
 STATUS_CHECK $?
 
 echo -n -e "\t\e[32m5. Updating roboshop.conf\e[0m.... \t\t\t"
