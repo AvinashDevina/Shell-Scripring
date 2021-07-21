@@ -4,7 +4,7 @@ LOG=/tmp/roboshoplogs/frontend.log
 
 echo -e "\t\e[32m1. Installing Nginx\e[0m"
 yum install nginx -y &>> $LOG
-if [ $? -ep 0 ]; then
+if [ $? -eq 0 ]; then
 	echo "Installation is Successful"
 else
 	echo "Installation is fail"
