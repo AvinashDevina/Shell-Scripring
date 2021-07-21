@@ -17,7 +17,7 @@ echo -n -e "\t\e[32m3. Extracting & Moving Frontend Code\e[0m.... \t"
 unzip /tmp/frontend.zip &>>$LOG && mv frontend-main/* . &>>$LOG && mv static/* . &>>$LOG
 STATUS_CHECK $?
 
-echo -n -e "\t\e[32m4. Cleaning useless Directories\e[0m.... \t\t\t"
+echo -n -e "\t\e[32m4. Cleaning useless Directories\e[0m.... \t\t"
 cd /usr/share/nginx/html && rm -rf frontend-master static &>>$LOG
 STATUS_CHECK $?
 
