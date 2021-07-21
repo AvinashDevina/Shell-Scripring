@@ -3,13 +3,12 @@
 LOG=/tmp/roboshoplogs/frontend.log
 
 echo -e "\t\e[32m1. Installing Nginx\e[0m"
-
-
-#yum install nginx -y &>> $LOG
-
-
-#echo "Installation is Successful"
-
+yum install nginx -y &>> $LOG
+if [ $? -ep 0 ]; then
+	echo "Installation is Successful"
+else
+	echo "Installation is fail"
+fi
 #echo "Starting Nginx"
 #systemctl start nginx &>> $LOG
 #echo "Nginx is Started"
