@@ -3,7 +3,7 @@
 LOG=/tmp/roboshoplogs/frontend.log
 
 echo -e "\t\e[32m1. Installing Nginx\e[0m"
-yum install nginx -y &>> $LOG
+yum install ngiinx -y &>> $LOG
 if [ $? -eq 0 ]; then
 	echo -e "\t\t\e[33mNginx Installation is Done\e[0m"
 else
