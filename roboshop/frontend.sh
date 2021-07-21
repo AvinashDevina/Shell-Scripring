@@ -19,14 +19,14 @@ STATUS_CHECK $?
 # rm -rf frontend-master static
 # mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
-echo -n -e "\t\e[32m6. Installing Nginx\e[0m....\t\t\t"
+echo -n -e "\t\e[32m6. Installing Nginx\e[0m....\t\t\t\t"
 yum install nginx -y &>> $LOG
 STATUS_CHECK $?
 
-echo -n -e "\t\e[32m7. Starting Nginx\e[0m....\t\t\t"
+echo -n -e "\t\e[32m7. Starting Nginx\e[0m....\t\t\t\t"
 systemctl start nginx &>> $LOG
 STATUS_CHECK $?
 
-echo -n -e "\t\e[32m8. Enabling Nginx\e[0m....\t\t\t"
+echo -n -e "\t\e[32m8. Enabling Nginx\e[0m....\t\t\t\t"
 systemctl enable nginx &>> $LOG
 STATUS_CHECK $?
