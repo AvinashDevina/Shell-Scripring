@@ -1,10 +1,22 @@
 #!/bin/bash
 
-mv -f frontend.log frontend$(date "+%Y-%m-%d").log
-
 LOG=/tmp/roboshoplogs/frontend.log
-echo -e "Step1 : \e[32mInstalling Nginx\e[0m"
-yum install nginx -y &>> $LOG
+
+echo -e "e[34mSaving old logs\e[0m"
+mv -f $LOG /tmp/roboshoplogs/oldlogs/frontend$(date "+%Y-%m-%d").log
+if[ $? -eq 0]; then
+	echo Done
+else
+	echo fail
+fi
+
+
+#echo -e "Step1 : \e[32mInstalling Nginx\e[0m"
+
+
+#yum install nginx -y &>> $LOG
+
+
 #echo "Installation is Successful"
 
 #echo "Starting Nginx"
