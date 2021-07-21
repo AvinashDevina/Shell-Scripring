@@ -2,7 +2,7 @@
 
 LOG=/tmp/roboshoplogs/frontend.log
 
-echo -e "\t\e[32mInstalling Nginx\e[0m"
+echo -e "\t\e[32m1.Installing Nginx\e[0m"
 
 
 #yum install nginx -y &>> $LOG
