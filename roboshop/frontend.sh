@@ -29,7 +29,7 @@ mv localhost.conf /etc/nginx/default.d/roboshop.conf &>>$LOG
 STATUS_CHECK $?
 
 echo -n -e "\t\e[32m7. Starting Nginx\e[0m....\t\t\t\t"
-systemctl start nginx &>> $LOG
+systemctl restart nginx &>> $LOG
 STATUS_CHECK $?
 
 echo -n -e "\t\e[32m8. Enabling Nginx\e[0m....\t\t\t\t"
