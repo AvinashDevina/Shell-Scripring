@@ -7,13 +7,11 @@ source common.sh
 echo -e "\e[31m1. Cleaning Old Code "
 cd /usr/share/nginx/html && rm -rf *
 STATUS_CHECK $?
-exit 1
 
 
 echo -n -e "\e[31m2. Downloading Frontend Code "
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip" &>>$LOG
 STATUS_CHECK $?
-exit 1
 
 echo -e "\e[31m3. Extracting & Moving Frontend Code "
 unzip /tmp/frontend.zip &>>$LOG && mv frontend-main/* . &>>$LOG && mv static/* . &>>$LOG
