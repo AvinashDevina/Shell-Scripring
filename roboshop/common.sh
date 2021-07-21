@@ -9,3 +9,9 @@ else
 	exit 1
 fi
 }
+
+USER_ID_CHECK=$(id -u){
+	if [ $USER_ID_CHECK -ne 0]; then
+		echo -e "\n[31m You should be a root or sudo user to run this script\e[0m"
+		exit 2
+}
