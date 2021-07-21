@@ -20,7 +20,7 @@ else
 	exit 1
 fi
 
-echo -n -e "\t\e[32m3. Enabling Nginx Auto Start after Reboot\t....\e[0m"
+echo -n -e "\t\e[32m3. Enabling Nginx\t....\e[0m"
 systemctl enable nginx &>> $LOG
 if [ $? -eq 0 ]; then
 	echo -e "\e[33mDone\e[0m"
