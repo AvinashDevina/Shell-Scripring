@@ -13,7 +13,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' > /etc/yum.repos.d/mon
 STATUS_CHECK $?
 
 echo -n -e "\t\e[32m1. Installing MongoDB\e[0m....\t\t"
-yum clean all -y && yum update all -y && yum install mongodb-org -y &>>$LOG
+yum clean all -y &>>$LOG && yum update all -y &>>$LOG && yum install mongodb-org -y &>>$LOG
 STATUS_CHECK $?
 
 
