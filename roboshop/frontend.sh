@@ -2,7 +2,7 @@
 
 LOG=/tmp/roboshoplogs/frontend.log
 
-echo -e "e[34mSaving old logs\e[0m"
+echo -e "\e[34mSaving old logs....\e[0m"
 mv -f $LOG /tmp/roboshoplogs/oldlogs/frontend$(date "+%Y-%m-%d").log
 if[ $? -eq 0]; then
 	echo Done
