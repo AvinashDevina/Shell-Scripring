@@ -3,14 +3,31 @@
 LOG=/tmp/roboshoplogs/frontend.log
 source common.sh
 
-echo -n -e "\t\e[32m1. Installing Nginx\t....\e[0m"
+
+echo -e "\e[31m1. Cleaning Old Code "
+cd /usr/share/nginx/html && rm -rf *
+STATUS_CHECK $?
+exit 1
+
+
+echo -n -e "\e[31m2. Downloading Frontend Code "
+curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip" &>>$LOG
+STATUS_CHECK $?
+exit 1
+
+echo -e "\e[31m3. Extracting & Moving Frontend Code "
+unzip /tmp/frontend.zip &>>$LOG && mv frontend-main/* . &>>$LOG && mv static/* . &>>$LOG
+# rm -rf frontend-master static
+# mv localhost.conf /etc/nginx/default.d/roboshop.conf
+
+echo -n -e "\t\e[32m6. Installing Nginx\t....\e[0m"
 yum install nginx -y &>> $LOG
 STATUS_CHECK $?
 
-echo -n -e "\t\e[32m2. Starting Nginx\t....\e[0m"
+echo -n -e "\t\e[32m7. Starting Nginx\t....\e[0m"
 systemctl start nginx &>> $LOG
 STATUS_CHECK $?
 
-echo -n -e "\t\e[32m3. Enabling Nginx\t....\e[0m"
+echo -n -e "\t\e[32m8. Enabling Nginx\t....\e[0m"
 systemctl enable nginx &>> $LOG
 STATUS_CHECK $?
