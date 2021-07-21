@@ -2,21 +2,21 @@
 
 LOG=/tmp/roboshoplogs/frontend.log
 
-echo -n -e "\t\e[32m1. Installing Nginx....\e[0m"
+echo -n -e "\t\e[32m1. Installing Nginx\t\t....\e[0m"
 yum install nginx -y &>> $LOG
 if [ $? -eq 0 ]; then
-	echo -e "\t\t\e[33mDone\e[0m"
+	echo -e "\e[33mDone\e[0m"
 else
-	echo -e "\t\t\e[33mfailed\e[0m (\e[31mPlease check the Errors in Log file at - $LOG\e[0m)"
+	echo -e "\e[33mfailed\e[0m (\e[31mPlease check the Errors in Log file at - $LOG\e[0m)"
 	exit 1
 fi
 
-echo -n -e "\t\e[32m2. Starting Nginx.....\e[0m"
+echo -n -e "\t\e[32m2. Starting Nginx\t\t....\e[0m"
 systemctl start nginx &>> $LOG
 if [ $? -eq 0 ]; then
-	echo -e "\t\t\e[33mDone\e[0m"
+	echo -e "\e[33mDone\e[0m"
 else
-	echo -e "\t\t\e[33mfailed\e[0m (\e[31mPlease check the Errors in Log file at - $LOG\e[0m)"
+	echo -e "\e[33mfailed\e[0m (\e[31mPlease check the Errors in Log file at - $LOG\e[0m)"
 	exit 1
 fi
 #echo "Nginx is Started"
