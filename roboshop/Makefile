@@ -3,7 +3,7 @@ frontend:
 	@bash frontend.sh
 ##
 catalouge:
-	@echo Creating Catalouge
+	@echo -e "\e[31m Creating Catalouge\e[0m"
 	@bash catalouge.sh
 ##
 user:
@@ -31,7 +31,7 @@ myqsl:
 	@bash mysql.sh
 ##
 mongodb:
-	@echo creating Mongodb
+	@echo -e "\e[31m Creating MongoDB\e[0m"
 	@bash mongodb.sh
 ##
 rabitmq:
