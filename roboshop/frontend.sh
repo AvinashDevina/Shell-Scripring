@@ -7,7 +7,7 @@ yum install ngiinx -y &>> $LOG
 if [ $? -eq 0 ]; then
 	echo -e "\t\t\e[33mNginx Installation is Done\e[0m"
 else
-	echo -e "\t\t\e[33mNginx Installation is failed\e[0m Please check the Log - $LOG"
+	echo -e "\t\t\e[33mNginx Installation is failed\e[0m \e[31mPlease check the Log - $LOG\e[0m"
 fi
 #echo "Starting Nginx"
 #systemctl start nginx &>> $LOG
