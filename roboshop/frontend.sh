@@ -15,6 +15,7 @@ STATUS_CHECK $?
 
 echo -n -e "\t\e[32m3. Extracting & Moving Frontend Code\e[0m.... \t"
 unzip /tmp/frontend.zip &>>$LOG && mv frontend-main/* . &>>$LOG && mv static/* . &>>$LOG
+STATUS_CHECK $?
 # rm -rf frontend-master static
 # mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
