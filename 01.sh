@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-echo "Hello, world"
+yum install nginx -y
