@@ -1,3 +1,5 @@
 #!/bin/zsh
 
-yum install nginx -y
+
+echo "Installing Nginx"
+yum install nginx -y &>/tmp/test.log
