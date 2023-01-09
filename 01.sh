@@ -1,2 +1,3 @@
-#hello
-#test
+#!/bin/zsh
+
+echo "Hello, world"
