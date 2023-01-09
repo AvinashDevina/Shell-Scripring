@@ -1,6 +1,6 @@
 #!/bin/zsh
 LOG="/tmp/test.log"
-printf -e "\n\033[1;31mInstalling Nginx\e[0m"
+printf "\n\033[1;31mInstalling Nginx\e[0m"
 yum install nginx -y &>/tmp/test.log
 if [ $? -eq 0 ]
   then
