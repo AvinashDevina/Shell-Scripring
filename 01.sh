@@ -1,6 +1,6 @@
 #!/bin/zsh
 
 echo -e "\n"
-echo "Installing Nginx"
+echo -e "\n Installing Nginx"
 yum install nginx -y &>/tmp/test.log
 echo -e "\n"
